@@ -1,0 +1,3 @@
+Today, a fast problem just to not lose the streak https://leetcode.com/problems/two-sum/submissions/
+
+Classified as `easy`, my first solution was to a iterate over the array 2 times, it works but i got a TLE. In my next iteration I've changed the 2nd for for a array.index to find if a complementary element exists, still pretty inefficient, but got an accepted. Maybe there is some mathematical trick that can reduce the complexity of the solution :thinking:
