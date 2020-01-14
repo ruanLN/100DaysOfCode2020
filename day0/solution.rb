@@ -26,7 +26,7 @@ def find_median_sorted_arrays(nums1, nums2)
     end
     
     median = remove_and_get_smaller(nums1, nums2)
-    single_median = total_size.odd?
+    single_median = total_size.even?
     unless single_median
         median += remove_and_get_smaller(nums1, nums2)
         median /= 2.0
