@@ -31,6 +31,17 @@ def find_median_sorted_arrays(nums1, nums2)
         median += remove_and_get_smaller(nums1, nums2)
         median /= 2.0
     end
-    return median
-        
+    return median       
+end
+
+
+require "test-unit"
+
+class TestFindMedianInSortedArrays < Test::Unit::TestCase
+  def test_simple
+    assert_equal(2.0, find_median_sorted_arrays([1, 3], [2]))
+    assert_equal(2.5, find_median_sorted_arrays([1, 3], [2, 4]))
+    assert_equal(1.5, find_median_sorted_arrays([1], [2]))
+    assert_equal(2.0, find_median_sorted_arrays([2], [2]))
+  end
 end
