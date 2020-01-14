@@ -15,4 +15,5 @@ jobs:
         ruby-version: 2.6.x
     - name: Build and test with Ruby
       run: |
-        ruby day0/solution.rb
+        gem install rspec
+        rspec day0/solution.rb
